@@ -1,0 +1,72 @@
+Setting up Nav Station on Linux
+
+Software to install:
+• OpenCPN
+• OpenCPN RADAR Plugin for Koden RADARpc (homemade)
+• zyGrib
+• qtVLM
+• pyRADAR Python Script
+• Airmail under WINE
+• gpsbabel (sudo apt-get install gpsbabel)
+• redshift (sudo apt-get install redshift)
+• Nautical Almanac 1.5-1 (sudo apt-get install nautic)
+
+Also check out software included in Navigation Distros:
+• Xinutop-nav OS 4.0
+• Navigatrix
+
+SETTING UP pyRADAR script on Linux:
+• Go to Network Connection "Edit Connection..."
+• Add a new Ethernet Connection named "Koden MDS-5R"
+• Go to the "IPv4 Settings" tab and change method to "Manual"
+• Add a new address under Addresses with the following info:
+∘ Address: 192.168.0.100
+∘ Netmask: 255.255.255.0
+∘ Gateway: (blank or 0.0.0.0)
+• Check the box at the bottom that says: "Require IPv4 addressing for this connection to complete"
+• Save the connection
+• Plug in the RADAR ethernet cable and turn the radar on
+• Select connection in the Network Connection and the computer should connect to the RADAR with IP details as above (check by running ifconfig)
+
+COMPILING OpenCPN on Ubuntu:
+• As per the instructions here: 
+∘ http://opencpn.org/ocpn/compiling_source_linux
+• If the compiler throws a lot of errors about "cannot pass objects of non-trivially-copyable" when it comes to compile the radar plugin then simply add ".c_str()" (without quotes) to the offending variables in the fPrintf calls
+• Compiled without a problem on 11/08/2014
+
+Setting up GPS:
+• Follow the instructions from "We start with gpsd" from here:
+∘ http://opencpn.org/ocpn/setting_up_gps
+• Worked perfectly on Ubuntu 14.04 on 11/08/2014
+• Check GPSD is working before starting OpenCPN by:
+∘ sudo /etc/init.d/gpsd status
+∘ sudo /etc/init.d/gpsd restart
+
+# If you are having trouble connecting (as with Cubietruck) then first check that root is able to access GPS streaming data with gpsmon
+sudo gpsmon /dev/ttyUSB1
+# If this works then at least you have a connection to the GPS
+# To get it working try the trick at the bottom of this page:
+# http://blog.retep.org/2012/06/18/getting-gps-to-work-on-a-raspberry-pi/
+sudo killall gpsd
+sudo rm -v /var/run/gpsd.sock
+sudo gpsd /dev/ttyUSB1 -F /var/run/gpsd.sock
+sudo service ntp restart
+
+Set up udev to assign serial-to-usb devices to a particular /dev/tty address:
+# You can find what device is assigned to a particular tty as follows:
+udevadm info -q all -n /dev/ttyUSB0
+udevadm info -a -p  /devices/pci0000:00/0000:00:1c.3/0000:19:00.0/usb3/3-1/3-1.1/3-1.1.2/3-1.1.2:1.0/ttyUSB4/tty/ttyUSB4
+
+########################
+# This stuff is now irrelevant due to
+# getting pyPaclink.py working
+
+
+Installing Airmail under WINE:
+• Ensure that you have spellchecker turned off after install otherwise you can get some strange behaviour as outlined here:
+∘ http://comments.gmane.org/gmane.comp.radio.linuxham/13169; and here
+∘ http://forum.ssca.org/viewtopic.php?f=5&t=11697
+
+
+
+

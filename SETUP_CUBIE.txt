@@ -1,0 +1,84 @@
+After flashing the SD and booting for the first time follow the instructions on
+the Desktop/README file to run cubie_setup.
+
+Then:
+
+sudo apt-get update
+sudo apt-get upgrade
+
+# From here this seemed to indicate that you need to do the following for hardware acceleration
+# http://www.cubieforums.com/index.php/topic,1511.msg9638.html#msg9638
+sudo apt-get install xserver-xorg-video-sunximali
+sudo apt-get install sunxi-disp-test
+sudo usermod -a -G video cubie
+sudo apt-get install glmark2-es2
+
+# Note from above - if you want to run hi-res video do the following:
+# Set Gnome Mplayer to use xv at Preferences.
+
+# Then "cd" to /home/cubie/git and clone the git directories
+git clone /media/POCKET/git/OpenCPN
+
+# Then follow the instructions here to set up OpenCPN (change libwxgtk2.8-dev to libwxgtk3.0-dev (and wx2.8-headers to wx3.0-headers)
+sudo apt-get install libgtk2.0-dev gettext git-core cmake gpsd gpsd-clients libgps-dev build-essential wx-common libwxgtk3.0-dev libglu1-mesa-dev libgtk2.0-dev wx3.0-headers libbz2-dev libtinyxml-dev libportaudio2 portaudio19-dev
+
+# Install zyGrib (from repsitories)
+sudo apt-get install zyGrib
+
+#-------------------
+# Install useful Python libraries/tools
+#-------------------
+sudo apt-get install python-matplotlib ipython
+
+#-------------------
+# Install a better text-editor and pdf viewer (for viewing cheatsheets)
+#-------------------
+sudo apt-get install vim xpdf
+
+#-------------------
+# TO INSTALL qtVLM
+#-------------------
+# Install subversion so you can pull down the qtVLM repository as per compile instructions here:
+# http://wiki.virtual-loup-de-mer.org/index.php/QtVlm/zh-hans
+cd /home/cubie/git
+svn checkout svn://svn.code.sf.net/p/qtvlm/code/trunk qtvlm
+cd qtvlm
+sudo apt-get install qt4-qmake qt4-dev-tools
+# Edit the makefile and change PREFIX=/opt/qtvlm/
+sudo make
+
+# If it throws an error during compile (about &double and &qreal) then change the line:
+double x1,y1,x2,y2;
+to:
+float x1,y1,x2,y2;
+AND change line:
+double minDist=10e5;
+to:
+float minDist=10e5;
+
+sudo make install
+
+#------------------
+# Install maps for qtVlm and zyGrib
+#------------------
+cp -rv /media/POCKET/qtVlm/maps/* /opt/qtVlm/maps/
+rsync -rv /media/POCKET/zyGrib/maps/* /usr/share/maps/
+
+#------------------
+# To set up Sailmail
+#------------------
+# Follow the instructions in pyPaclink SETUP_POSTFIX.sh
+# Install a lightweight email client (claws-mail) as follows:
+sudo apt-get install clawsker
+
+
+#------------------
+# Trying to improve es2gears results
+#------------------
+# From here: http://www.cubieforums.com/index.php?topic=3084.10;wap2
+Change /usr/share/X11/xorg.conf.d/99-sunxifb.conf
+"SwapbuffersWait" "true"
+"SwapbuffersWait" "false"
+
+
+

@@ -1,0 +1,251 @@
+POSSIBLE FIX:
+https://lists.debian.org/debian-backports/2014/05/msg00024.html
+
+cubie@cubietruck:~$ sudo apt-get install gedit
+[sudo] password for cubie: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  bluez-alsa bluez-gstreamer g++-4.6 hplip-data libart-2.0-2 libclass-isa-perl
+  libdri2-1 libevent-2.0-5 libkms1 libmozjs10d libmozjs24d libproxy0
+  libpthread-stubs0 libreadline5 libsensors4 libslp1 libsnmp-base
+  libstdc++6-4.6-dev libswitch-perl libts-0.0-0 module-init-tools
+  python-gnupginterface python-imaging python-pycurl python-renderpm
+  python-reportlab python-reportlab-accel tsconf ttf-dejavu-core ttf-freefont
+  xulrunner-24.0
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  adwaita-icon-theme at-spi2-core cgmanager consolekit fonts-dejavu
+  fonts-dejavu-extra gedit-common geoclue-2.0 gir1.2-peas-1.0
+  gnome-icon-theme-symbolic gnome-themes-standard gnome-themes-standard-data
+  gnome-user-guide gstreamer1.0-plugins-good gstreamer1.0-x
+  gtk2-engines-pixbuf initscripts iputils-arping libatk-bridge2.0-0
+  libatspi2.0-0 libaudit-common libaudit1 libavc1394-0 libcgmanager0
+  libck-connector0 libcolord2 libdv4 libegl1-mesa libegl1-mesa-drivers
+  libepoxy0 libevdev2 libgbm1 libgtk-3-0 libgtk-3-bin libgtk-3-common
+  libgtksourceview-3.0-1 libgtksourceview-3.0-common libiec61883-0
+  libjavascriptcoregtk-3.0-0 libjson-glib-1.0-0 libjson-glib-1.0-common
+  libllvm3.5 libmbim-glib4 libmbim-proxy libmm-glib0 libndp0 libnih-dbus1
+  libnih1 libnm-glib4 libnm-util2 libopenvg1-mesa libpam-ck-connector
+  libpam-systemd libpeas-1.0-0 libpeas-common libpython3.4 libqmi-glib1
+  libqmi-proxy libraw1394-11 librest-0.7-0 libsecret-1-0 libsecret-common
+  libshout3 libsmartcols1 libsoup2.4-1 libtag1-vanilla libtag1c2a libteamdctl0
+  libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1-mesa
+  libwayland-server0 libwebkitgtk-3.0-0 libwebkitgtk-3.0-common libwebp5
+  libxkbcommon0 libxslt1.1 libyelp0 modemmanager mount network-manager ppp
+  python3-cairo python3-gi-cairo startpar systemd systemd-shim sysvinit-utils
+  udev xserver-xorg-core xserver-xorg-input-evdev xserver-xorg-input-synaptics
+  xserver-xorg-input-wacom xserver-xorg-video-ati xserver-xorg-video-fbdev
+  xserver-xorg-video-mach64 xserver-xorg-video-nouveau xserver-xorg-video-r128
+  xserver-xorg-video-radeon xserver-xorg-video-vesa yelp yelp-xsl zenity
+  zenity-common
+Suggested packages:
+  gedit-plugins libdv-bin oss-compat libraw1394-doc nfs-common avahi-autoipd
+  libteam-utils systemd-ui bootlogd sash xfonts-scalable
+  gpointing-device-settings touchfreeze xinput firmware-linux
+The following packages will be REMOVED:
+  libaudit0 libsunxi-mali-x11 xserver-xorg-video-sunximali
+The following NEW packages will be installed:
+  adwaita-icon-theme at-spi2-core cgmanager fonts-dejavu fonts-dejavu-extra
+  gedit gedit-common geoclue-2.0 gir1.2-peas-1.0 gnome-icon-theme-symbolic
+  gnome-user-guide gstreamer1.0-plugins-good gstreamer1.0-x
+  gtk2-engines-pixbuf iputils-arping libatk-bridge2.0-0 libatspi2.0-0
+  libaudit-common libaudit1 libavc1394-0 libcgmanager0 libcolord2 libdv4
+  libegl1-mesa libegl1-mesa-drivers libepoxy0 libevdev2 libgbm1
+  libgtksourceview-3.0-1 libgtksourceview-3.0-common libiec61883-0
+  libjavascriptcoregtk-3.0-0 libjson-glib-1.0-0 libjson-glib-1.0-common
+  libllvm3.5 libmbim-glib4 libmbim-proxy libmm-glib0 libndp0 libnih-dbus1
+  libnih1 libopenvg1-mesa libpam-systemd libpeas-1.0-0 libpeas-common
+  libpython3.4 libqmi-glib1 libqmi-proxy libraw1394-11 librest-0.7-0
+  libsecret-1-0 libsecret-common libshout3 libsmartcols1 libtag1-vanilla
+  libtag1c2a libteamdctl0 libwavpack1 libwayland-client0 libwayland-cursor0
+  libwayland-egl1-mesa libwayland-server0 libwebkitgtk-3.0-0
+  libwebkitgtk-3.0-common libwebp5 libxkbcommon0 libxslt1.1 libyelp0
+  python3-cairo python3-gi-cairo startpar systemd systemd-shim yelp yelp-xsl
+  zenity zenity-common
+The following packages will be upgraded:
+  consolekit gnome-themes-standard gnome-themes-standard-data initscripts
+  libck-connector0 libgtk-3-0 libgtk-3-bin libgtk-3-common libnm-glib4
+  libnm-util2 libpam-ck-connector libsoup2.4-1 modemmanager mount
+  network-manager ppp sysvinit-utils udev xserver-xorg-core
+  xserver-xorg-input-evdev xserver-xorg-input-synaptics
+  xserver-xorg-input-wacom xserver-xorg-video-ati xserver-xorg-video-fbdev
+  xserver-xorg-video-mach64 xserver-xorg-video-nouveau xserver-xorg-video-r128
+  xserver-xorg-video-radeon xserver-xorg-video-vesa
+29 upgraded, 77 newly installed, 3 to remove and 252 not upgraded.
+Need to get 37.8 MB/78.3 MB of archives.
+After this operation, 196 MB of additional disk space will be used.
+Do you want to continue [Y/n]? Y
+Get:1 http://ftp.es.debian.org/debian/ stable/main libgtksourceview-3.0-common all 3.14.1-1 [621 kB]
+Get:2 http://ftp.es.debian.org/debian/ stable/main libgtksourceview-3.0-1 armhf 3.14.1-1 [173 kB]    3
+Get:3 http://ftp.es.debian.org/debian/ stable/main libraw1394-11 armhf 2.1.0-3 [41.9 kB]             
+Get:4 http://ftp.es.debian.org/debian/ stable/main libiec61883-0 armhf 1.2.0-0.2 [28.4 kB]           
+Get:5 http://ftp.es.debian.org/debian/ stable/main libjavascriptcoregtk-3.0-0 armhf 2.4.8-2 [1,811 kB]
+Get:6 http://ftp.es.debian.org/debian/ stable/main libcgmanager0 armhf 0.33-2+deb8u2 [42.1 kB]       
+Get:7 http://ftp.es.debian.org/debian/ stable/main libnih1 armhf 1.0.3-4.3 [123 kB]                  
+Get:8 http://ftp.es.debian.org/debian/ stable/main libnih-dbus1 armhf 1.0.3-4.3 [96.2 kB]            
+Get:9 http://ftp.es.debian.org/debian/ stable/main cgmanager armhf 0.33-2+deb8u2 [74.2 kB]           
+Get:10 http://ftp.es.debian.org/debian/ stable/main systemd-shim armhf 9-1 [16.2 kB]                 
+Get:11 http://ftp.es.debian.org/debian/ stable/main libpython3.4 armhf 3.4.2-1 [1,156 kB]            
+Get:12 http://ftp.es.debian.org/debian/ stable/main libshout3 armhf 2.3.1-3 [40.3 kB]                
+Get:13 http://ftp.es.debian.org/debian/ stable/main libtag1-vanilla armhf 1.9.1-2.1 [239 kB]         
+Get:14 http://ftp.es.debian.org/debian/ stable/main libwavpack1 armhf 4.70.0-1 [70.0 kB]             
+Get:15 http://ftp.es.debian.org/debian/ stable/main libwebp5 armhf 0.4.1-1.2+b2 [168 kB]             
+Get:16 http://ftp.es.debian.org/debian/ stable/main libwebkitgtk-3.0-common all 2.4.8-2 [451 kB]     
+Get:17 http://ftp.es.debian.org/debian/ stable/main libwebkitgtk-3.0-0 armhf 2.4.8-2 [6,533 kB]      
+Get:18 http://ftp.es.debian.org/debian/ stable/main libavc1394-0 armhf 0.5.4-2 [21.2 kB]             
+Get:19 http://ftp.es.debian.org/debian/ stable/main fonts-dejavu-extra all 2.34-1 [1,771 kB]         
+Get:20 http://ftp.es.debian.org/debian/ stable/main fonts-dejavu all 2.34-1 [30.8 kB]                
+Get:21 http://ftp.es.debian.org/debian/ stable/main libpeas-common all 1.12.1-2 [165 kB]             
+Get:22 http://ftp.es.debian.org/debian/ stable/main libpeas-1.0-0 armhf 1.12.1-2 [165 kB]            
+Get:23 http://ftp.es.debian.org/debian/ stable/main gedit-common all 3.14.0-3 [1,603 kB]             
+Get:24 http://ftp.es.debian.org/debian/ stable/main gnome-icon-theme-symbolic all 3.12.0-1 [145 kB]  
+Get:25 http://ftp.es.debian.org/debian/ stable/main python3-cairo armhf 1.10.0+dfsg-4+b1 [23.6 kB]   
+Get:26 http://ftp.es.debian.org/debian/ stable/main python3-gi-cairo armhf 3.14.0-1 [311 kB]         
+Get:27 http://ftp.es.debian.org/debian/ stable/main gir1.2-peas-1.0 armhf 1.12.1-2 [127 kB]          
+Get:28 http://ftp.es.debian.org/debian/ stable/main gedit armhf 3.14.0-3 [368 kB]                    
+Get:29 http://ftp.es.debian.org/debian/ stable/main geoclue-2.0 armhf 2.1.10-2 [63.6 kB]             
+Get:30 http://ftp.es.debian.org/debian/ stable/main libyelp0 armhf 3.14.1-1 [169 kB]                 
+Get:31 http://ftp.es.debian.org/debian/ stable/main yelp-xsl all 3.14.0-1 [465 kB]                   
+Get:32 http://ftp.es.debian.org/debian/ stable/main yelp armhf 3.14.1-1 [784 kB]                     
+Get:33 http://ftp.es.debian.org/debian/ stable/main gnome-user-guide all 3.14.1-1 [12.5 MB]          
+Get:34 http://ftp.es.debian.org/debian/ stable/main libtag1c2a armhf 1.9.1-2.1 [17.6 kB]             
+Get:35 http://ftp.es.debian.org/debian/ stable/main gstreamer1.0-plugins-good armhf 1.4.4-2 [2,268 kB]
+Get:36 http://ftp.es.debian.org/debian/ stable/main gstreamer1.0-x armhf 1.4.4-2 [824 kB]            
+Get:37 http://ftp.es.debian.org/debian/ stable/main gtk2-engines-pixbuf armhf 2.24.25-3 [542 kB]     
+Get:38 http://ftp.es.debian.org/debian/ stable/main zenity-common all 3.14.0-1 [3,527 kB]            
+Get:39 http://ftp.es.debian.org/debian/ stable/main zenity armhf 3.14.0-1 [248 kB]                   
+Get:40 http://ftp.es.debian.org/debian/ stable/main iputils-arping armhf 3:20121221-5+b2 [30.1 kB]   
+Fetched 37.8 MB in 35min 48s (17.6 kB/s)                                                             
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+Selecting previously unselected package libsmartcols1:armhf.
+(Reading database ... 86538 files and directories currently installed.)
+Preparing to unpack .../libsmartcols1_2.25.2-6_armhf.deb ...
+Unpacking libsmartcols1:armhf (2.25.2-6) ...
+Setting up libsmartcols1:armhf (2.25.2-6) ...
+Processing triggers for libc-bin (2.19-18) ...
+(Reading database ... 86544 files and directories currently installed.)
+Preparing to unpack .../mount_2.25.2-6_armhf.deb ...
+Unpacking mount (2.25.2-6) over (2.20.1-5.3) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up mount (2.25.2-6) ...
+(Reading database ... 86549 files and directories currently installed.)
+Preparing to unpack .../sysvinit-utils_2.88dsf-59_armhf.deb ...
+Unpacking sysvinit-utils (2.88dsf-59) over (2.88dsf-41+deb7u1) ...
+Selecting previously unselected package startpar.
+Preparing to unpack .../startpar_0.59-3_armhf.deb ...
+Unpacking startpar (0.59-3) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up startpar (0.59-3) ...
+Installing new version of config file /etc/init/startpar-bridge.conf ...
+(Reading database ... 86556 files and directories currently installed.)
+Preparing to unpack .../xserver-xorg-video-r128_6.9.2-1+b2_armhf.deb ...
+Unpacking xserver-xorg-video-r128 (6.9.2-1+b2) over (6.8.2-1) ...
+Preparing to unpack .../xserver-xorg-video-mach64_6.9.4-2_armhf.deb ...
+Unpacking xserver-xorg-video-mach64 (6.9.4-2) over (6.9.1-2) ...
+Preparing to unpack .../xserver-xorg-video-radeon_1%3a7.5.0-1_armhf.deb ...
+Unpacking xserver-xorg-video-radeon (1:7.5.0-1) over (1:6.14.4-8) ...
+Preparing to unpack .../xserver-xorg-video-ati_1%3a7.5.0-1_armhf.deb ...
+Unpacking xserver-xorg-video-ati (1:7.5.0-1) over (1:6.14.4-8) ...
+Preparing to unpack .../xserver-xorg-video-vesa_1%3a2.3.3-1+b3_armhf.deb ...
+Unpacking xserver-xorg-video-vesa (1:2.3.3-1+b3) over (1:2.3.1-1+b1) ...
+Preparing to unpack .../xserver-xorg-video-fbdev_1%3a0.4.4-1+b2_armhf.deb ...
+Unpacking xserver-xorg-video-fbdev (1:0.4.4-1+b2) over (1:0.4.2-4+b1) ...
+Preparing to unpack .../xserver-xorg-video-nouveau_1%3a1.0.11-1_armhf.deb ...
+Unpacking xserver-xorg-video-nouveau (1:1.0.11-1) over (1:1.0.1-5) ...
+Selecting previously unselected package libevdev2.
+Preparing to unpack .../libevdev2_1.3+dfsg-1_armhf.deb ...
+Unpacking libevdev2 (1.3+dfsg-1) ...
+Preparing to unpack .../xserver-xorg-input-wacom_0.26.0+20140918-1_armhf.deb ...
+Unpacking xserver-xorg-input-wacom (0.26.0+20140918-1) over (0.15.0+20120515-2) ...
+Preparing to unpack .../xserver-xorg-input-evdev_1%3a2.9.0-2_armhf.deb ...
+Unpacking xserver-xorg-input-evdev (1:2.9.0-2) over (1:2.7.0-1+b1) ...
+Preparing to unpack .../xserver-xorg-core_2%3a1.16.4-1_armhf.deb ...
+Unpacking xserver-xorg-core (2:1.16.4-1) over (2:1.12.4-6+deb7u2) ...
+Preparing to unpack .../xserver-xorg-input-synaptics_1.8.1-1_armhf.deb ...
+Unpacking xserver-xorg-input-synaptics (1.8.1-1) over (1.6.2-2) ...
+Preparing to unpack .../libpam-ck-connector_0.4.6-5_armhf.deb ...
+Unpacking libpam-ck-connector:armhf (0.4.6-5) over (0.4.5-3.1) ...
+dpkg: considering deconfiguration of consolekit, which would be broken by installation of udev ...
+dpkg: yes, will deconfigure consolekit (broken by udev)
+Preparing to unpack .../udev_215-17+deb8u1_armhf.deb ...
+De-configuring consolekit (0.4.5-3.1) ...
+Since release 198, udev requires support for the following features in
+the running kernel:
+
+- inotify(2)            (CONFIG_INOTIFY_USER)
+- signalfd(2)           (CONFIG_SIGNALFD)
+- accept4(2)
+- open_by_handle_at(2)  (CONFIG_FHANDLE)
+- timerfd_create(2)     (CONFIG_TIMERFD)
+- epoll_create(2)       (CONFIG_EPOLL)
+
+Please upgrade your kernel before or while upgrading udev.
+
+AT YOUR OWN RISK, you can force the installation of this version of udev
+WHICH DOES NOT WORK WITH YOUR RUNNING KERNEL AND WILL BREAK YOUR SYSTEM
+AT THE NEXT REBOOT by creating the /etc/udev/kernel-upgrade file.
+There is always a safer way to upgrade, do not try this unless you
+understand what you are doing!
+
+
+dpkg: error processing archive /var/cache/apt/archives/udev_215-17+deb8u1_armhf.deb (--unpack):
+ subprocess new pre-installation script returned error exit status 1
+insserv: warning: script 'firstrun' missing LSB tags and overrides
+insserv: warning: script 'firstrun' missing LSB tags and overrides
+dpkg: considering deconfiguration of udev, which would be broken by installation of consolekit ...
+dpkg: yes, will deconfigure udev (broken by consolekit)
+Preparing to unpack .../consolekit_0.4.6-5_armhf.deb ...
+De-configuring udev (175-7.2) ...
+Unpacking consolekit (0.4.6-5) over (0.4.5-3.1) ...
+Replacing files in old package udev (175-7.2) ...
+Preparing to unpack .../libck-connector0_0.4.6-5_armhf.deb ...
+Unpacking libck-connector0:armhf (0.4.6-5) over (0.4.5-3.1) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Errors were encountered while processing:
+ /var/cache/apt/archives/udev_215-17+deb8u1_armhf.deb
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+cubie@cubietruck:~$ sudo apt-get update
+[sudo] password for cubie: 
+cubie@cubietruck:~$ sudo apt-get install gedit
+[sudo] password for cubie: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+You might want to run 'apt-get -f install' to correct these:
+The following packages have unmet dependencies:
+ consolekit : Breaks: udev (< 204-1) but 175-7.2 is to be installed
+ gedit : Depends: libgtk-3-0 (>= 3.14.0) but 3.4.2-7 is to be installed
+         Depends: libgtksourceview-3.0-1 (>= 3.14.0) but it is not going to be installed
+         Depends: libpeas-1.0-0 (>= 1.1.0) but it is not going to be installed
+         Depends: gedit-common (>= 3.14) but it is not going to be installed
+         Depends: gedit-common (< 3.15) but it is not going to be installed
+         Depends: gnome-icon-theme-symbolic but it is not going to be installed
+         Depends: python3-gi-cairo (>= 3.0) but it is not going to be installed
+         Depends: gir1.2-peas-1.0 but it is not going to be installed
+         Recommends: zenity but it is not going to be installed
+         Recommends: yelp but it is not going to be installed
+ xserver-xorg-core : Depends: libegl1-mesa but it is not going to be installed or
+                              libegl1 but it is not installable
+                     Depends: libaudit1 (>= 1:2.2.1) but it is not going to be installed
+                     Depends: libepoxy0 (>= 1.0) but it is not going to be installed
+                     Depends: libgbm1 (>= 8.1~0) but it is not going to be installed
+E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
+cubie@cubietruck:~$ 
+
+
+
+
+
+
+
+
+/var/log/apt/history.log
+
+Commandline: apt-get install gedit
+Install: libteamdctl0:armhf (1.12-2, automatic), fonts-dejavu-extra:armhf (2.34-1, automatic), yelp-xsl:armhf (3.14.0-1, automatic), gir1.2-peas-1.0:armhf (1.12.1-2, automatic), libraw1394-11:armhf (2.1.0-3, automatic), gedit-common:armhf (3.14.0-3, automatic), libopenvg1-mesa:armhf (10.3.2-1, automatic), libyelp0:armhf (3.14.1-1, automatic), libaudit-common:armhf (2.4-1, automatic), libavc1394-0:armhf (0.5.4-2, automatic), libndp0:armhf (1.4-2, automatic), zenity:armhf (3.14.0-1, automatic), libmm-glib0:armhf (1.4.0-1, automatic), libsecret-common:armhf (0.18-1, automatic), libsecret-1-0:armhf (0.18-1+b1, automatic), libdv4:armhf (1.0.0-6, automatic), libwayland-client0:armhf (1.6.0-2, automatic), libwavpack1:armhf (4.70.0-1, automatic), libpeas-1.0-0:armhf (1.12.1-2, automatic), libjson-glib-1.0-common:armhf (1.0.2-1, automatic), libcgmanager0:armhf (0.33-2+deb8u2, automatic), libxslt1.1:armhf (1.1.28-2+b2, automatic), libegl1-mesa:armhf (10.3.2-1, automatic), gnome-icon-theme-symbolic:armhf (3.12.0-1, automatic), python3-gi-cairo:armhf (3.14.0-1, automatic), libgbm1:armhf (10.3.2-1, automatic), libwebkitgtk-3.0-0:armhf (2.4.8-2, automatic), systemd-shim:armhf (9-1, automatic), systemd:armhf (215-17+deb8u1, automatic), libxkbcommon0:armhf (0.4.3-2, automatic), libcolord2:armhf (1.2.1-1+b2, automatic), libjson-glib-1.0-0:armhf (1.0.2-1, automatic), gstreamer1.0-plugins-good:armhf (1.4.4-2, automatic), fonts-dejavu:armhf (2.34-1, automatic), libqmi-glib1:armhf (1.10.2-2, automatic), librest-0.7-0:armhf (0.7.92-3, automatic), libegl1-mesa-drivers:armhf (10.3.2-1, automatic), libiec61883-0:armhf (1.2.0-0.2, automatic), libpeas-common:armhf (1.12.1-2, automatic), libwebkitgtk-3.0-common:armhf (2.4.8-2, automatic), iputils-arping:armhf (20121221-5+b2, automatic), libqmi-proxy:armhf (1.10.2-2, automatic), libnih-dbus1:armhf (1.0.3-4.3, automatic), cgmanager:armhf (0.33-2+deb8u2, automatic), gtk2-engines-pixbuf:armhf (2.24.25-3, automatic), libepoxy0:armhf (1.2-1, automatic), libevdev2:armhf (1.3+dfsg-1, automatic), libpython3.4:armhf (3.4.2-1, automatic), libatk-bridge2.0-0:armhf (2.14.0-2, automatic), libjavascriptcoregtk-3.0-0:armhf (2.4.8-2, automatic), libmbim-glib4:armhf (1.10.0-2.1, automatic), libpam-systemd:armhf (215-17+deb8u1, automatic), adwaita-icon-theme:armhf (3.14.0-2, automatic), libatspi2.0-0:armhf (2.14.0-1, automatic), gnome-user-guide:armhf (3.14.1-1, automatic), libwayland-server0:armhf (1.6.0-2, automatic), libmbim-proxy:armhf (1.10.0-2.1, automatic), gedit:armhf (3.14.0-3), libwebp5:armhf (0.4.1-1.2+b2, automatic), startpar:armhf (0.59-3, automatic), libtag1-vanilla:armhf (1.9.1-2.1, automatic), libshout3:armhf (2.3.1-3, automatic), libllvm3.5:armhf (3.5-10, automatic), libgtksourceview-3.0-common:armhf (3.14.1-1, automatic), geoclue-2.0:armhf (2.1.10-2, automatic), libtag1c2a:armhf (1.9.1-2.1, automatic), gstreamer1.0-x:armhf (1.4.4-2, automatic), libgtksourceview-3.0-1:armhf (3.14.1-1, automatic), libwayland-egl1-mesa:armhf (10.3.2-1, automatic), yelp:armhf (3.14.1-1, automatic), python3-cairo:armhf (1.10.0+dfsg-4+b1, automatic), libsmartcols1:armhf (2.25.2-6, automatic), zenity-common:armhf (3.14.0-1, automatic), libwayland-cursor0:armhf (1.6.0-2, automatic), libaudit1:armhf (2.4-1+b1, automatic), at-spi2-core:armhf (2.14.0-1, automatic), libnih1:armhf (1.0.3-4.3, automatic)
+Upgrade: consolekit:armhf (0.4.5-3.1, 0.4.6-5), network-manager:armhf (0.9.4.0-10, 0.9.10.0-7), xserver-xorg-input-synaptics:armhf (1.6.2-2, 1.8.1-1), initscripts:armhf (2.88dsf-41+deb7u1, 2.88dsf-59), ppp:armhf (2.4.5-5.1+b1, 2.4.6-3.1), libck-connector0:armhf (0.4.5-3.1, 0.4.6-5), modemmanager:armhf (0.5.2.0-2, 1.4.0-1), libnm-glib4:armhf (0.9.4.0-10, 0.9.10.0-7), libgtk-3-bin:armhf (3.4.2-7, 3.14.5-1), gnome-themes-standard:armhf (3.4.2-2.1, 3.14.2.2-1), xserver-xorg-core:armhf (1.12.4-6+deb7u2, 1.16.4-1), libgtk-3-0:armhf (3.4.2-7, 3.14.5-1), xserver-xorg-video-r128:armhf (6.8.2-1, 6.9.2-1+b2), mount:armhf (2.20.1-5.3, 2.25.2-6), udev:armhf (175-7.2, 215-17+deb8u1), libsoup2.4-1:armhf (2.38.1-3, 2.48.0-1), xserver-xorg-video-nouveau:armhf (1.0.1-5, 1.0.11-1), xserver-xorg-video-mach64:armhf (6.9.1-2, 6.9.4-2), gnome-themes-standard-data:armhf (3.4.2-2.1, 3.14.2.2-1), xserver-xorg-input-wacom:armhf (0.15.0+20120515-2, 0.26.0+20140918-1), libnm-util2:armhf (0.9.4.0-10, 0.9.10.0-7), xserver-xorg-video-fbdev:armhf (0.4.2-4+b1, 0.4.4-1+b2), libpam-ck-connector:armhf (0.4.5-3.1, 0.4.6-5), sysvinit-utils:armhf (2.88dsf-41+deb7u1, 2.88dsf-59), xserver-xorg-video-radeon:armhf (6.14.4-8, 7.5.0-1), xserver-xorg-input-evdev:armhf (2.7.0-1+b1, 2.9.0-2), xserver-xorg-video-vesa:armhf (2.3.1-1+b1, 2.3.3-1+b3), xserver-xorg-video-ati:armhf (6.14.4-8, 7.5.0-1), libgtk-3-common:armhf (3.4.2-7, 3.14.5-1)
+Remove: libsunxi-mali-x11:armhf (1.0-4), xserver-xorg-video-sunximali:armhf (1.0-5), libaudit0:armhf (1.7.18-1.1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
