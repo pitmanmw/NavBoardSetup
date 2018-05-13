@@ -1,0 +1,13 @@
+# To get glmark and glmark-es2
+sudo apt-get install glmark glmark-es2
+
+# To get es2gears
+sudo apt-get install mesa-utils-extra
+
+# Installing qt5-qmake also installed lib-mesa2 (or something like that) which broke hardware accelleration.  Fixed by 
+apt-get remove qt5-qmake && apt-get autoremove
+
+# OpenCPN compile failed saying that it could not find lEGL.  Fixed with:
+sudo ln -s /usr/lib/arm-linux-gnueabihf/mali-egl/libEGL.so /usr/lib/libEGL.so
+# Not sure if this should have been (but OpenCPN continued to compile without a problem an seemed to run fine at the end):
+# sudo ln -s /usr/lib/arm-linux-gnueabihf/mesa-egl/libEGL.so /usr/lib/libEGL.so

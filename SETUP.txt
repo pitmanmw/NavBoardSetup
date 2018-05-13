@@ -49,6 +49,7 @@ sudo gpsmon /dev/ttyUSB1
 # http://blog.retep.org/2012/06/18/getting-gps-to-work-on-a-raspberry-pi/
 sudo killall gpsd
 sudo rm -v /var/run/gpsd.sock
+sudo gpsmon /dev/ttyUSB1
 sudo gpsd /dev/ttyUSB1 -F /var/run/gpsd.sock
 sudo service ntp restart
 
@@ -56,6 +57,8 @@ Set up udev to assign serial-to-usb devices to a particular /dev/tty address:
 # You can find what device is assigned to a particular tty as follows:
 udevadm info -q all -n /dev/ttyUSB0
 udevadm info -a -p  /devices/pci0000:00/0000:00:1c.3/0000:19:00.0/usb3/3-1/3-1.1/3-1.1.2/3-1.1.2:1.0/ttyUSB4/tty/ttyUSB4
+# Follow the guide in the SETUP_GPS folder for setting up persistent symlinks
+
 
 ########################
 # This stuff is now irrelevant due to

@@ -1,0 +1,5 @@
+https://forum.armbian.com/index.php?/topic/1420-opengl-on-mali-gpu-bananapi-orangepi-pc-etc/&
+
+https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
+
+https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:developer_guide:compiling_linux:building_and_installing_on_cubieboard_2_with_hw_acceleration

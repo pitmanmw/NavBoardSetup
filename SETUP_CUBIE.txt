@@ -43,7 +43,7 @@ sudo apt-get install vim xpdf
 cd /home/cubie/git
 svn checkout svn://svn.code.sf.net/p/qtvlm/code/trunk qtvlm
 cd qtvlm
-sudo apt-get install qt4-qmake qt4-dev-tools
+sudo apt-get install qt4-qmake qt4-dev-tools libqt4-dev
 # Edit the makefile and change PREFIX=/opt/qtvlm/
 sudo make
 

@@ -1,0 +1,5 @@
+Now with the list of serial numbers in hand let’s create a UDEV ruleset that’ll make a nice symbolic link for each of these devices. UDEV rules are usually scattered into many files in /etc/udev/rules.d. Create a new file called 99-usb-serial.rules and put the following lines in there:
+
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="ftDIGQVO", SYMLINK+="icom802"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="ftDIGO0T", SYMLINK+="gps"
+#SUBSYSTEM=="tty", ATTRS{idVendor}=="0557", ATTRS{idProduct}=="6001", ATTRS{serial}=="sw-ehci", SYMLINK+="heading"
